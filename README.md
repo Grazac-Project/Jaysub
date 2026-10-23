@@ -105,7 +105,15 @@ The source includes per-page titles/descriptions, canonical URLs, an XML sitemap
 7. Add real business contact details, substantive service information and genuine project examples. Build links from your real company profiles, partners and relevant directories. Do not invent clients, reviews or offices.
 8. For broader service searches, develop useful content around specific customer problems and actual projects. Keep relevant pages updated; avoid duplicate keyword-stuffed pages.
 
-`SITE_URL` or Vercel's production-domain variable must be present for indexing to be enabled. If you deploy somewhere other than Vercel, set `SITE_URL` explicitly. A full Lighthouse or live Google indexing check has not been run; production performance and indexing must be verified on the deployed domain.
+The canonical domain defaults to `https://www.jaysub.com`. Set `SITE_URL=https://www.jaysub.com` in Vercel and remove any previous `vercel.app` value. Development and Vercel Preview deployments are noindex. A full Lighthouse or live Google indexing check has not been run; production performance and indexing must be verified on the deployed domain.
 
 Official Google guide: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 Sitemap guide: https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
+
+## Reviews section
+
+`app/reviews.tsx` contains the three review cards immediately before A Few Good Questions. The section contains the client testimonials and attributions supplied by Jaysub for Toheeb Olayemi (Intrapair), Tobiloba Kolawole (Stitchvine) and Tayo Adekanmbi (KeepUp).
+
+## Jaysub Enterprise branded-search update
+
+Read `SEO-LAUNCH.md` before deploying. It records the live canonical-domain issue, completed code changes, validation and remaining Vercel/Search Console actions. Production canonical URLs should use `https://www.jaysub.com`.
